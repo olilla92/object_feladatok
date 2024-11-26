@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="object_feladatok.js"></script>
+    <style>
+        .bekeres{
+            margin: 5px;
+        }
+        .gomb{
+            background-color: aliceblue;
+            border: 2px solid black;
+            color: gray;
+            text-align: center;
+            width: 75px;
+        }
+        .gomb:hover{
+            background-color: gray;
+            color: aliceblue;
+        }
+    </style>
+    <title>Object</title>
+</head>
+<body>
+    <h2>Adatok eltárolása: </h2>
+    Hány adatot szeretnél eltárolni? <input type="number" id="adatszam" class="bekeres"><br>
+    Kérem adja meg a nevét: <input type="text" id="nev" class="bekeres"><br>
+    Kérem adja meg az E-Mail címét: <input type="text" id="email" class="bekeres"><br>
+    <input type="button" value="Beadás" class="gomb" onclick="bead()">
+
+    <h2>Órarend eltárolása: </h2>
+    A nap száma: <input type="number" id="adatszam" class="nap"><br>
+    Kérem adja meg a tantárgy nevét: <input type="text" id="megnev" class="bekeres"><br>
+    Kérem adja meg az óra sorszámát: <input type="text" id="sorszam" class="bekeres"><br>
+    Kérem adja meg a tanár nevét: <input type="text" id="tanar" class="bekeres"><br>
+    <input type="button" value="Hozzáadás" class="beadas" onclick="hozzaad()">
+</body>
+</html>
